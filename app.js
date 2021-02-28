@@ -108,13 +108,14 @@ function app(){
     function addingNewMember(){
         inquirer.prompt([
             {
-                type: "checkbox",
-                choices: [
-                    'manager',
-                    'engineer',
-                    'intern',
-                    'done'
-                ],
+                type: "input",
+                message: "select employee: manager, engineer, intern, or done",
+                // choices: [
+                //     'manager',
+                //     'engineer',
+                //     'intern',
+                //     'done'
+                // ],
                 name: 'employeeChoice'
             }
         ]).then(function(response){
